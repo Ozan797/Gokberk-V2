@@ -1,0 +1,14 @@
+.experience {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.experience .mrhbLogo {
+  width: 100px;
+}
+.experience .title {
+  color: var(--deep-blue);
+}/*# sourceMappingURL=Experience.module.css.map */

@@ -1,0 +1,9 @@
+.experienceList {
+  max-width: 800px;
+}
+.experienceList ol {
+  color: var(--deep-blue);
+}
+.experienceList ol ul li {
+  color: var(--text-color);
+}/*# sourceMappingURL=ExperienceList.module.css.map */
