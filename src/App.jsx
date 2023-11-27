@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home/Home";
 import NavbarComponent from "./components/Navbar/NavbarComponent";
 import Experience from "./pages/Experience/Experience";
+import Error from "./pages/Error/Error";
 function App() {
   return (
     <>
@@ -11,8 +12,7 @@ function App() {
         <Routes>
           <Route path="/"  element={<Home />} />
           <Route path="/experience"  element={<Experience />} />
-
-          {/* <Route path="*" element={<Error404 />} /> */}
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>
