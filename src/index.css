@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto&display=swap");
 :root {
   --primary-color: #f2fcfc;
   --secondary-color: #cbf1f5;
   --accent-color: #a6e3e9;
-  --deep-blue: #009dab ;
+  --deep-blue: #009dab;
 
   --text-color: #333333;
 
@@ -28,10 +28,20 @@ section {
 }
 
 button {
-  border: 3px solid var(--accent-color);
+  border: 2px solid var(--deep-blue);
   cursor: pointer;
   background-color: transparent;
   padding: 10px;
+  margin: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  scale: 1.05;
+  background-color: var(--deep-blue);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
 }
 
 a {
@@ -39,6 +49,13 @@ a {
   color: var(--text-color);
 }
 
-h1, h2, h3,h4 {
-    font-family: var(--primary-font);
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--primary-font);
+}
+
+.highlight {
+  color: var(--deep-blue);
 }
