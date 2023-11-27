@@ -6,11 +6,11 @@ import styles from "./Navbar.module.css";
 
 function NavbarComponent() {
   return (
-    <>
+    <header>
       <Navbar
         expand="md"
         className="bg-body-tertiary mb-3"
-        data-bs-theme="dark"
+        data-bs-theme="light"
         fixed="top"
       >
         <Container fluid>
@@ -29,10 +29,10 @@ function NavbarComponent() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className={`justify-content-end flex-grow-1 pe-3 mr-5`}>
-                <Nav.Link href="#" className={styles.nav_link}>Home</Nav.Link>
-                <Nav.Link href="#">Experience</Nav.Link>
-                <Nav.Link href="#">Projects</Nav.Link>
-                <Nav.Link href="#">Contact</Nav.Link>
+                <Nav.Link href="/" className={styles.nav_link}>Home</Nav.Link>
+                <Nav.Link href="/experience">Experience</Nav.Link>
+                <Nav.Link href="/projects">Projects</Nav.Link>
+                <Nav.Link href="/contact">Contact</Nav.Link>
                 <a
                   download
                   href="../../../public/Resume.pdf"
@@ -46,7 +46,7 @@ function NavbarComponent() {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
-    </>
+    </header>
   );
 }
 

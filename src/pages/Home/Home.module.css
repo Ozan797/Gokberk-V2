@@ -1,0 +1,28 @@
+.home {
+  height: 125vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+}
+.home .container {
+  max-width: 60vw;
+}
+.home .head {
+  font-size: 18px;
+}
+.home .title {
+  font-weight: 600;
+  color: var(--deep-blue);
+}
+.home button {
+  border: 2px solid black;
+  margin: 10px;
+}
+.home button a {
+  padding: 10px;
+}
+.home .titleDesc {
+  max-width: 800px;
+}/*# sourceMappingURL=Home.module.css.map */
