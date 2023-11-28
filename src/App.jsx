@@ -4,15 +4,17 @@ import Home from "./pages/Home/Home";
 import NavbarComponent from "./components/Navbar/NavbarComponent";
 import Experience from "./pages/Experience/Experience";
 import Error from "./pages/Error/Error";
+import Projects from "./pages/Projects/Projects";
 function App() {
   return (
     <>
-    {/* <NavbarComponent /> */}
+    <NavbarComponent />
       <BrowserRouter>
         <Routes>
           <Route path="/"  element={<Home />} />
           <Route path="/experience"  element={<Experience />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/projects"  element={<Projects />} />
+          <Route path="/*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>

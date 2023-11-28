@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Navbar.module.css"}
+{"version":3,"sources":["Navbar.module.sass","Navbar.module.css"],"names":[],"mappings":"AAAA;EACI,kCAAA;EACA,aAAA;EACA,mBAAA;EACA,WAAA;ACCJ;ADAI;EACI,kCAAA;EACA,YAAA;ACER","file":"Navbar.module.css"}

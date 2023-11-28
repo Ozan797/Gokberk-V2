@@ -3,18 +3,17 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import styles from "./Navbar.module.css";
-
+import DownloadIcon from '@mui/icons-material/Download';
 function NavbarComponent() {
   return (
     <header>
       <Navbar
         expand="md"
-        className="bg-body-tertiary mb-3"
+        className="mb-3"
         data-bs-theme="light"
-        fixed="top"
       >
         <Container fluid>
-          <Navbar.Brand href="#">Ozan Gokberk</Navbar.Brand>
+          <Navbar.Brand href="/">Ozan Gokberk</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-md" />
           <Navbar.Offcanvas
             id="offcanvasNavbar-expand-md"
@@ -29,17 +28,17 @@ function NavbarComponent() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className={`justify-content-end flex-grow-1 pe-3 mr-5`}>
-                <Nav.Link href="/" className={styles.nav_link}>Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/experience">Experience</Nav.Link>
                 <Nav.Link href="/projects">Projects</Nav.Link>
                 <Nav.Link href="/contact">Contact</Nav.Link>
                 <a
                   download
                   href="../../../public/Resume.pdf"
-                  className={`btn btn-danger ${styles.resume}`}
+                  className={`btn ${styles.resume}`}
                   role="button"
                 >
-                  Resume
+                  <DownloadIcon /> Resume
                 </a>
               </Nav>
             </Offcanvas.Body>
