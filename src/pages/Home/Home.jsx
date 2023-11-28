@@ -3,6 +3,7 @@ import styles from "./Home.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Typewriter from "typewriter-effect";
+import RedirectButton from "../../components/Button/RedirectButton";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
           </h3>
           <h1 className={styles.title}>Ozan Gokberk</h1>
           <p className={styles.titleDesc}>
-            I'm Ozan, a skilled software engineer specialized in Fullstack
+            Im Ozan, a skilled software engineer specialized in Fullstack
             development and proficient in Typescript, NestJS, ReactJS, and
             Python. My passion lies at the crossroads of Web development
             innovation and AI development along with blockchain technology,
@@ -31,26 +32,23 @@ const Home = () => {
 
           {/* Buttons */}
           <div className={styles.buttonContainer}>
-            <button>
-              <a href="/projects">View Projects</a>
-            </button>
-            <button>
-              <a href="/experience">View Experience</a>
-            </button>
+            <RedirectButton buttonText="View Projects" url="/projects" />
+            <RedirectButton buttonText="View Experience" url="/experience" />
+
             <a
               href="https://github.com/Ozan797"
               target="_blank"
               rel="noreferrer"
               id={styles.link}
             >
-              <GitHubIcon className={styles.githubIcon} />
+              <GitHubIcon className={styles.icon} />
             </a>
             <a
               href="https://www.linkedin.com/in/ozan-gokberk-bb6939240/"
               target="_blank"
               rel="noreferrer"
             >
-              <LinkedInIcon className={styles.linkedInIcon} />
+              <LinkedInIcon className={styles.icon} />
             </a>
           </div>
         </div>

@@ -1,0 +1,7 @@
+button:hover a {
+  color: white;
+}
+button a {
+  padding: 10px;
+  color: var(--deep-blue);
+}/*# sourceMappingURL=RedirectButton.module.css.map */

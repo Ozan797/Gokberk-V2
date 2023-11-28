@@ -30,12 +30,7 @@
   padding: 10px;
   color: var(--deep-blue);
 }
-.home .buttonContainer .githubIcon {
+.home .buttonContainer .icon {
   scale: 2;
-}
-.home .buttonContainer .linkedInIcon {
-  scale: 2;
-}
-.home .buttonContainer #link {
-  margin-right: 10px;
+  margin-right: 5px;
 }/*# sourceMappingURL=Home.module.css.map */

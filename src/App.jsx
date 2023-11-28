@@ -7,7 +7,7 @@ import Error from "./pages/Error/Error";
 function App() {
   return (
     <>
-    <NavbarComponent />
+    {/* <NavbarComponent /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/"  element={<Home />} />

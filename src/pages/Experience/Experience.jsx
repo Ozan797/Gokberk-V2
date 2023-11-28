@@ -13,7 +13,7 @@ const Experience = () => {
         <span className="highlight">MRHB.Network</span>
       </h1>
       <h3>1 Year Placement (June 2023 - Present) </h3>
-      <h4 className="highlight">Software Engineer</h4>
+      <h4 className="highlight">Software Engineer Intern</h4>
       <ExperienceList />
     </section>
   );
