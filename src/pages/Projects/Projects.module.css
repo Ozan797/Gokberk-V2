@@ -2,4 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+#projects .mainProject {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=Projects.module.css.map */

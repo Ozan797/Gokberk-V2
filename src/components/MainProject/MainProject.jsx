@@ -1,6 +1,8 @@
 import styles from "./MainProject.module.css";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import LaunchIcon from "@mui/icons-material/Launch";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import PropTypes from "prop-types";
 
 const MainProject = ({
   projRank,
@@ -12,6 +14,17 @@ const MainProject = ({
   websiteLink,
   videoLink,
 }) => {
+  // Prop Validation
+  MainProject.propTypes = {
+    projRank: PropTypes.string,
+    projName: PropTypes.string,
+    projDesc: PropTypes.string,
+    techStack: PropTypes.string,
+    projectImg: PropTypes.string,
+    githubLink: PropTypes.string,
+    websiteLink: PropTypes.string,
+    videoLink: PropTypes.string,
+  };
   return (
     <div className={styles.container}>
       {/* Description side of project */}
@@ -29,9 +42,11 @@ const MainProject = ({
           <p>{techStack}</p>
         </div>
         <div className={styles.links}>
-          <a href="#">{githubLink}</a>
+          <a href={githubLink} target="_blank" rel="noreferrer">
+            <GitHubIcon />
+          </a>
           {websiteLink && (
-            <a href={websiteLink}>
+            <a href={websiteLink} target="_blank" rel="noreferrer">
               <LaunchIcon />
             </a>
           )}
@@ -45,7 +60,8 @@ const MainProject = ({
 
       {/* Image side of main project */}
       <div className={styles.projectImg}>
-        <img src={projectImg} alt="A image" /></div>
+        <img src={projectImg} alt="A image" />
+      </div>
     </div>
   );
 };
