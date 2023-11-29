@@ -3,13 +3,13 @@
   max-width: 60vw;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px rgba(30, 30, 30, 0.3);
-  background-color: var(--secondary-color);
+  box-shadow: 0px 0px 50px 5px rgba(30, 30, 30, 0.3);
 }
-.container .projRank {
-  font-size: 12px;
+.container .projRank h4 {
+  font-size: 14px;
 }
 .container .projName h1 {
+  font-weight: 700;
   color: var(--deep-blue);
 }
 .container .projDesc {
@@ -24,4 +24,16 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 20px;
+}
+.container .techStack {
+  color: var(--deep-blue);
+  font-weight: 600px;
+}
+.container .links a {
+  color: var(--deep-blue);
+}
+.container .links a > * {
+  scale: 1.5;
+  margin: 10px;
 }/*# sourceMappingURL=MainProject.module.css.map */
