@@ -22,6 +22,7 @@ body {
   color: var(--text-color);
   overflow-x: hidden;
   font-family: var(--secondary-font);
+  line-height: 1.3;
 }
 
 section {

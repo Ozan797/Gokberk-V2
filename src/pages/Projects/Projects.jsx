@@ -29,17 +29,32 @@ const Projects = () => {
         </div>
       </div>
       <div className={styles.smallProject}>
-        <h1>Small Projects</h1>
         <div className={styles.grid}>
-          <SmallProject />
-          {/* <SmallProject />
-          <SmallProject />
-          <SmallProject />
-          <SmallProject />
-          <SmallProject />
-          <SmallProject />
-          <SmallProject />
-          <SmallProject /> */}
+          <SmallProject
+            projectTitle="Password Generator"
+            projectDesc="This is a password generator written in Python.
+            It uses a 16 or 32 length character password thats composed of
+            letters, numbers and symbols"
+            projectTS="Python"
+            githubLink="google.com"
+            videoLink="youtube.com"
+          />
+          <SmallProject
+            projectTitle="Discord Bot"
+            projectDesc="This is a Discord bot using JavaScript.
+          This is a bot for a server that can do various fun activities for the server members"
+            projectTS="JavaScript"
+            githubLink=""
+            videoLink=""
+          />
+          <SmallProject
+            projectTitle="Keylogger"
+            projectDesc="Using Python I managed to create a Keylogger.
+            Once the file is run all the users entered keystrokes are recorded"
+            projectTS="Python"
+            githubLink="https://github.com/Ozan797/Cyber-Security-Projects"
+            videoLink=""
+          />
         </div>
       </div>
     </section>

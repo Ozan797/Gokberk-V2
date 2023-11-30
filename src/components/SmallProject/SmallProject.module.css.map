@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"SmallProject.module.css"}
+{"version":3,"sources":["SmallProject.module.sass","SmallProject.module.css"],"names":[],"mappings":"AAAA;EACI,kDAAA;EACA,aAAA;EACA,mBAAA;EACA,gBAAA;EACA,eAAA;EACA,+BAAA;ACCJ;ADAI;EACI,4BAAA;ACER;ADDQ;EACI,uBAAA;ACGZ;ADFI;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,oBAAA;ACIR;ADHI;EACI,eAAA;ACKR;ADJI;EACI,oBAAA;ACMR;ADLI;EACI,YAAA;ACOR","file":"SmallProject.module.css"}
