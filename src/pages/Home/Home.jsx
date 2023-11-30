@@ -34,6 +34,7 @@ const Home = () => {
           <div className={styles.buttonContainer}>
             <RedirectButton buttonText="View Projects" url="/projects" />
             <RedirectButton buttonText="View Experience" url="/experience" />
+            <RedirectButton buttonText="Contact Me" url="mailto:ozan8@hotmail.co.uk?subject= Hey Ozan!" />
 
             <a
               href="https://github.com/Ozan797"
