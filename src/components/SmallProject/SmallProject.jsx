@@ -4,6 +4,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PropTypes from "prop-types";
 import TechIcon from "../TechIcon/TechIcon";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 const SmallProject = ({
   projectTitle,
@@ -11,6 +12,7 @@ const SmallProject = ({
   projectTS,
   githubLink,
   videoLink,
+  websiteLink,
 }) => {
   SmallProject.propTypes = {
     projectTitle: PropTypes.string,
@@ -19,6 +21,7 @@ const SmallProject = ({
     projectImg: PropTypes.string,
     githubLink: PropTypes.string,
     videoLink: PropTypes.string,
+    websiteLink: PropTypes.string,
   };
   const icon = {
     width: "50px",
@@ -36,7 +39,16 @@ const SmallProject = ({
         <FolderCopyOutlinedIcon style={icon} />
         <div className={styles.links}>
           <a href={githubLink} target="_blank" rel="noreferrer"><GitHubIcon style={link}/></a>
-          <a href={videoLink} target="_blank" rel="noreferrer"><YouTubeIcon style={link}/></a>
+          {websiteLink && (
+            <a href={websiteLink} target="_blank" rel="noreferrer">
+              <LaunchIcon />
+            </a>
+          )}
+          {videoLink && (
+            <a href={videoLink}>
+              <YouTubeIcon />
+            </a>
+          )}
         </div>
       </span>
       <h1 className={styles.title}>{projectTitle}</h1>

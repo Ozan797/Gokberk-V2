@@ -8,6 +8,11 @@ function NavbarComponent() {
   const whiteText = {
     color: "#fff",
   };
+    const openPdf = () => {
+      window.open("./src/assets/Resume.pdf")
+    }
+  
+
   return (
     <header>
       <Navbar expand="md" className="mb-3" data-bs-theme="light">
@@ -30,11 +35,12 @@ function NavbarComponent() {
                 <Nav.Link href="/experience">Experience</Nav.Link>
                 <Nav.Link href="/projects">Projects</Nav.Link>
                 <a
-                  download
-                  href="../../../public/OzanGokberkCV.pdf"
+                  // download
+                  // href="../../../public/OzanGokberkCV.pdf"
                   className={`btn ${styles.resume}`}
                   role="button"
                   style={whiteText}
+                  onClick={openPdf}
                 >
                   <DownloadIcon /> Resume
                 </a>

@@ -31,21 +31,28 @@ const Projects = () => {
       <div className={styles.smallProject}>
         <div className={styles.grid}>
           <SmallProject
+            projectTitle="Portfolio V1"
+            projectDesc="This is version 1 of my portfolio.
+            I created it when I had little React Experience
+            but managed to learn a lot through doing it"
+            projectTS="ReactJS"
+            githubLink="https://github.com/Ozan797/Ozan-Gokberk.git"
+            websiteLink="https://www.ozangokberk.com/"
+          />
+          <SmallProject
             projectTitle="Password Generator"
             projectDesc="This is a password generator written in Python.
             It uses a 16 or 32 length character password thats composed of
             letters, numbers and symbols"
             projectTS="Python"
-            githubLink="google.com"
-            videoLink="youtube.com"
+            githubLink="https://github.com/Ozan797/"
           />
           <SmallProject
             projectTitle="Discord Bot"
             projectDesc="This is a Discord bot using JavaScript.
           This is a bot for a server that can do various fun activities for the server members"
             projectTS="JavaScript"
-            githubLink=""
-            videoLink=""
+            githubLink="https://github.com/Ozan797/"
           />
           <SmallProject
             projectTitle="Keylogger"
@@ -53,7 +60,6 @@ const Projects = () => {
             Once the file is run all the users entered keystrokes are recorded"
             projectTS="Python"
             githubLink="https://github.com/Ozan797/Cyber-Security-Projects"
-            videoLink=""
           />
         </div>
       </div>
