@@ -1,5 +1,5 @@
 .home {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,16 +21,39 @@
 }
 .home .buttonContainer {
   display: flex;
-  align-items: center;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 .home .buttonContainer button:hover a {
   color: white;
 }
-.home .buttonContainer a {
-  padding: 10px;
-  color: var(--deep-blue);
+.home .buttonContainer button a {
+  padding: 5px;
 }
 .home .buttonContainer .icon {
-  scale: 2;
-  margin-right: 5px;
+  font-size: 40px;
+}
+.home .buttonContainer a {
+  margin: 10px;
+  color: var(--deep-blue);
+}
+@media screen and (max-width: 1000px) {
+  .home .buttonContainer {
+    flex-direction: column;
+  }
+  .home .container {
+    max-width: 90vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  .home .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .buttonContainer {
+    align-items: center;
+  }
 }/*# sourceMappingURL=Home.module.css.map */

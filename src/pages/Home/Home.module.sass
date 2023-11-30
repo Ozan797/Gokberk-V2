@@ -1,5 +1,5 @@
 .home
-    height: 100vh
+    height: 80vh
     display: flex
     justify-content: center
     align-items: center
@@ -18,15 +18,32 @@
 
     .buttonContainer
         display: flex
-        align-items: center
+        align-items: left
+        justify-content: space-between
+        flex-direction: column
+        max-width: fit-content
         button
             &:hover
                 a
                     color: white
-        a
-            padding: 10px
-            color: var(--deep-blue)
-            
+            a
+                padding: 5px
+
         .icon
-            scale: 2
-            margin-right: 5px
+            font-size: 40px
+        a
+            margin: 10px
+            color: var(--deep-blue)
+
+    @media screen and (max-width: 1000px)
+        .buttonContainer
+            flex-direction: column
+
+        .container
+            max-width: 90vw
+    @media screen and (max-width: 426px)
+        .buttons
+            display: flex
+            flex-direction: column
+        .buttonContainer
+            align-items: center

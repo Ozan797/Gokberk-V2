@@ -32,30 +32,33 @@ const Home = () => {
 
           {/* Buttons */}
           <div className={styles.buttonContainer}>
-            <RedirectButton buttonText="View Projects" url="/projects" />
-            <RedirectButton buttonText="View Experience" url="/experience" />
-            <RedirectButton buttonText="Contact Me" url="mailto:ozan8@hotmail.co.uk?subject= Hey Ozan!" />
-
-            <a
-              href="https://github.com/Ozan797"
-              target="_blank"
-              rel="noreferrer"
-              id={styles.link}
-            >
-              <GitHubIcon className={styles.icon} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ozan-gokberk-bb6939240/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <LinkedInIcon className={styles.icon} />
-            </a>
+            <div className={styles.buttons}>
+              <RedirectButton buttonText="View Projects" url="/projects" />
+              <RedirectButton buttonText="View Experience" url="/experience" />
+              <RedirectButton
+                buttonText="Contact Me"
+                url="mailto:ozan8@hotmail.co.uk?subject= Hey Ozan!"
+              />
+            </div>
+            <div>
+              <a
+                href="https://github.com/Ozan797"
+                target="_blank"
+                rel="noreferrer"
+                id={styles.link}
+              >
+                <GitHubIcon className={styles.icon} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ozan-gokberk-bb6939240/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInIcon className={styles.icon} />
+              </a>
+            </div>
           </div>
         </div>
-        {/* <div className={styles.clouds}>
-          <img src={Clouds} alt="Image of clouds" />
-        </div> */}
       </section>
     </>
   );
