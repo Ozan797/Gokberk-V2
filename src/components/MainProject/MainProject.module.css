@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  max-width: 60vw;
+  max-width: 80vw;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 50px 5px rgba(30, 30, 30, 0.3);
@@ -36,4 +36,28 @@
 .container .links a > * {
   scale: 1.5;
   margin: 10px;
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    min-width: 95vw;
+    justify-content: center;
+  }
+  .container .projDesc {
+    max-width: 50vw;
+  }
+  .container .projectImg {
+    max-width: 40vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  .container {
+    min-width: 95vw;
+  }
+  .container .projDesc {
+    min-width: 80vw;
+  }
+  .projectImg {
+    display: none;
+  }
 }/*# sourceMappingURL=MainProject.module.css.map */
