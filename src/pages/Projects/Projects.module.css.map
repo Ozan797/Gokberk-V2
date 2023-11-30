@@ -1,1 +1,1 @@
-{"version":3,"sources":["Projects.module.sass","Projects.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;ACCJ;ADEI;EACI,mBAAA;ACAR","file":"Projects.module.css"}
+{"version":3,"sources":["Projects.module.sass","Projects.module.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,sBAAA;ACCJ;ADCI;EACI,eAAA;ACCR;ADAI;EACI,mBAAA;ACER;ADAI;EACI,mBAAA;ACER;ADDQ;EACI,aAAA;EACA,qCAAA;EACA,SAAA;EACA,YAAA;EACA,YAAA;ACGZ","file":"Projects.module.css"}

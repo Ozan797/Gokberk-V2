@@ -5,5 +5,18 @@
   flex-direction: column;
 }
 #projects .mainProject {
+  margin: 10rem 0;
+}
+#projects .mainProjects {
   margin-bottom: 1rem;
+}
+#projects .smallProject {
+  margin-bottom: 20px;
+}
+#projects .smallProject .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1rem;
+  margin: 10px;
+  width: 500px;
 }/*# sourceMappingURL=Projects.module.css.map */
